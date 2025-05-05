@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if ! command -v python3 &> /dev/null; then
-    echo "Please download Python 3.11.9 first!"
+    echo "Please install Python version higher than 3.10 first!"
     exit 1
 fi
 
