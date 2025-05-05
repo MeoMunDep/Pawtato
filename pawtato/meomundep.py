@@ -1,2 +1,2 @@
-print(f"What should i choose? 20 or 30?")
+print(f"How many stars to unlock this script? depend on you mate!")
 
