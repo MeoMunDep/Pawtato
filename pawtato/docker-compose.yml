@@ -1,0 +1,13 @@
+version: '3.8'
+services:
+  bot:
+    container_name: 'Pawtato'
+    build:
+      context: .
+    stop_signal: SIGINT
+    restart: unless-stopped
+    command: 'python meomundep.py -a 1 -m y'
+    volumes:
+      - .:/app
+    working_dir: /app
+    tty: true

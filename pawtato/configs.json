@@ -1,0 +1,11 @@
+{
+  "skipInvalidProxy": false,
+  "delayEachAccount": [1, 1],
+  "timeToRestartAllAccounts": 300,
+  "howManyAccountsRunInOneTime": 10,
+  "doTasks": true,
+  "uploadImages": true,
+  "updateName": true,
+  "connectWallets": true,
+  "answerQuestions": true
+}
