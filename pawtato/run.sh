@@ -28,4 +28,4 @@ fi
 [ ! -f proxies.txt ] && echo "# proxies" > proxies.txt
 [ ! -f suiAddresses.txt ] && echo "# suiAddresses" > suiAddresses.txt
 
-python3 meomundep.py
+python meomundep.py
