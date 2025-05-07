@@ -216,7 +216,7 @@ aiohttp_proxy
 beautifulsoup4
 cloudscraper
 colorama
-Cryptodome
+pycryptodome
 ```
 
 ### Configurations (configs.json)
