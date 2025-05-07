@@ -287,10 +287,7 @@ chmod +x run.sh && ./run.sh
 ```bash
 docker build -t pawtato .
 
-docker run -it --rm \
-  -v $(pwd)/data:/app/data \
-  --name pawtato-container \
-  pawtato
+docker run -it --rm -v ${PWD}/data:/app/data --name pawtato-container pawtato
 ```
 
 </details>
