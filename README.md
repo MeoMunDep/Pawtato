@@ -183,7 +183,7 @@ Create a file named `docker-compose.yml` with the following content:
 version: '3.8'
 services:
   bot:
-    container_name: 'Pawtato'
+    container_name: 'pawtato'
     build:
       context: .
     stop_signal: SIGINT
@@ -201,7 +201,7 @@ services:
 
 Ensure you have the following files in your folder:
 
-- `Pawtato.py` - Main bot script
+- `meomundep.py` - Main bot script
 - `configs.json` - Configuration file
 - `datas.txt` - Bot data
 - `suiAddresses.txt` - Sui address (optional)
@@ -257,7 +257,7 @@ Edit the `configs.json` file to customize the bot's behavior:
 <summary><b>Windows</b></summary>
 
 ```
-python Pawtato.py
+python meomundep.py
 ```
 
 Or double-click the provided `run.bat` file.
@@ -268,7 +268,7 @@ Or double-click the provided `run.bat` file.
 <summary><b>macOS/Linux</b></summary>
 
 ```bash
-python Pawtato.py
+python meomundep.py
 ```
 
 Or make the script executable and run:
@@ -285,11 +285,11 @@ chmod +x run.sh && ./run.sh
 <summary><b>Build and Run with Docker</b></summary>
 
 ```bash
-docker build -t Pawtato .
+docker build -t pawtato .
 
 docker run -it --rm \
   -v $(pwd)/data:/app/data \
-  --name Pawtato-container \
+  --name pawtato-container \
   pawtato
 ```
 
@@ -315,7 +315,7 @@ Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
 ### Linux/macOS
 
 ```bash
-chmod 600 configs.json suiAddresses.txt datas.txt proxies.txt Pawtato.py
+chmod 600 configs.json suiAddresses.txt datas.txt proxies.txt meomundep.py
 ```
 
 ## 🌐 Datas and Proxies and Sui Addresses
