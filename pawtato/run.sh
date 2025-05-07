@@ -5,7 +5,7 @@ if ! command -v python3 &> /dev/null; then
     exit 1
 fi
 
-pip3 install -r requirements.txt
+pip install -r requirements.txt
 
 if [ ! -f configs.json ]; then
     echo "Creating configs.json..."
