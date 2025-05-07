@@ -1,7 +1,7 @@
 version: '3.8'
 services:
   bot:
-    container_name: 'Pawtato'
+    container_name: 'pawtato'
     build:
       context: .
     stop_signal: SIGINT
