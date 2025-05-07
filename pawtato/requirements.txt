@@ -1,0 +1,6 @@
+aiohttp
+aiohttp_proxy
+beautifulsoup4
+cloudscraper
+colorama
+pycryptodome
