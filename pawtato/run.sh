@@ -5,7 +5,7 @@ if ! command -v python3 &> /dev/null; then
     exit 1
 fi
 
-pip install -r requirements.txt
+pip3 install -r requirements.txt
 
 if [ ! -f configs.json ]; then
     echo "Creating configs.json..."
@@ -28,4 +28,4 @@ fi
 [ ! -f proxies.txt ] && echo "# proxies" > proxies.txt
 [ ! -f suiAddresses.txt ] && echo "# suiAddresses" > suiAddresses.txt
 
-python meomundep.py
+python3 meomundep.py
