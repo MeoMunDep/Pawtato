@@ -128,7 +128,7 @@ pip install -r requirements.txt
 <summary><b>macOS/Linux</b></summary>
 
 ```bash
-pip install -r requirements.txt
+pip3 install -r requirements.txt
 ```
 
 </details>
@@ -167,12 +167,12 @@ WORKDIR /app
 
 COPY requirements.txt .
 
-RUN pip install --upgrade pip setuptools wheel
-RUN pip install --no-warn-script-location --no-cache-dir -r requirements.txt
+RUN pip3 install --upgrade pip setuptools wheel
+RUN pip3 install --no-warn-script-location --no-cache-dir -r requirements.txt
 
 COPY . .
 
-CMD ["python", "meomundep.py"]
+CMD ["python3", "meomundep.py"]
 ```
 
 #### 3. Create docker-compose.yml (Optional)
@@ -188,7 +188,7 @@ services:
       context: .
     stop_signal: SIGINT
     restart: unless-stopped
-    command: 'python meomundep.py -a 1 -m y'
+    command: 'python3 meomundep.py -a 1 -m y'
     volumes:
       - .:/app
     working_dir: /app
@@ -268,7 +268,7 @@ Or double-click the provided `run.bat` file.
 <summary><b>macOS/Linux</b></summary>
 
 ```bash
-python meomundep.py
+python3 meomundep.py
 ```
 
 Or make the script executable and run:
