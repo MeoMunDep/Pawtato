@@ -4,3 +4,4 @@ beautifulsoup4
 cloudscraper
 colorama
 pycryptodome
+pyfiglet
