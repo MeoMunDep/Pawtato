@@ -390,7 +390,7 @@ _Note: each row for each account_
 
    - Run Docker containers as non-root user:
      ```bash
-     docker run -u 1000:1000 Pawtato
+     docker run -u 1000:1000 pawtato
      ```
    - Keep your Docker installation up-to-date
 
