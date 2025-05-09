@@ -399,7 +399,7 @@ _Note: each row for each account_
 
 The executable file is obfuscated to protect the source code. This is normal and doesn't indicate malicious behavior.
 
-## 📞 Contact & Support
+## 📞 Contact and Support
 
 - **Support me via** [Referral Link](https://t.me/PawtatoBot?start=goFiBMa4dFx8)
 - **Support me via Donate** [Here](https://t.me/KeoAirDropFreeNe/312/27801)
