@@ -315,7 +315,7 @@ Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
 chmod 600 configs.json suiAddresses.txt datas.txt proxies.txt meomundep.py
 ```
 
-## 🌐 Datas and Proxies and Sui Addresses
+## Datas and Proxies and Sui Addresses
 
 - Fill the data for `datas.txt` file, get data from [here](https://t.me/KeoAirDropFreeNe/257/6879).
 - This file contains user data in the following format:
@@ -376,7 +376,7 @@ _Note: each row for each account_
 - Check if your IP or proxy is blocked
 </details>
 
-## 🛡️ Security Recommendations
+## Security Recommendations
 
 1. **Data Protection**:
 
