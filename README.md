@@ -10,10 +10,10 @@ This comprehensive guide will help you set up and run the Pawtato Bot on Windows
   - [Docker Installation](#docker-installation)
 - [Configuration](#configuration)
 - [Running the Bot](#running-the-bot)
-- [Using Proxies](#using-proxies)
+- [Using Proxies](#datas-and-proxies-and-sui-addresses)
 - [Troubleshooting](#troubleshooting)
 - [Security Recommendations](#security-recommendations)
-- [Contact and Support](#contact--support)
+- [Contact and Support](#contact-and-support)
 
 ## Prerequisites
 
