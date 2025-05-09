@@ -15,7 +15,7 @@ This comprehensive guide will help you set up and run the Pawtato Bot on Windows
 - [Security Recommendations](#security-recommendations)
 - [Contact and Support](#contact--support)
 
-## 🔧 Prerequisites
+## Prerequisites
 
 Before setting up the bot, ensure you have the following installed:
 
@@ -23,11 +23,11 @@ Before setting up the bot, ensure you have the following installed:
 - **Git** (optional) - For cloning the repository
 - **Docker** (optional) - For containerized deployment
 
-## 🚀 Installation Methods
+## Installation Methods
 
 You can choose between standard installation or Docker-based deployment.
 
-### ⚙️ Standard Installation
+### Standard Installation
 
 #### 1. Install Python
 
@@ -133,7 +133,7 @@ pip3 install -r requirements.txt
 
 </details>
 
-### 🐳 Docker Installation
+### Docker Installation
 
 #### 1. Install Docker
 
@@ -195,7 +195,7 @@ services:
     tty: true
 ```
 
-## ⚙️ Configuration
+## Configuration
 
 ### Required Files
 
@@ -249,7 +249,7 @@ Edit the `configs.json` file to customize the bot's behavior:
 - `connectWallets`: Enable wallet connection feature
 - `answerQuestions`: Enable auto-answering of questions
 
-## ▶️ Running the Bot
+## Running the Bot
 
 ### Standard Method
 
@@ -351,7 +351,7 @@ socks5://user:password@host:port
 
 _Note: each row for each account_
 
-## ❓ Troubleshooting
+## Troubleshooting
 
 <details>
 <summary><b>Bot crashes on startup</b></summary>
@@ -399,7 +399,7 @@ _Note: each row for each account_
 
 The executable file is obfuscated to protect the source code. This is normal and doesn't indicate malicious behavior.
 
-## 📞 Contact and Support
+## Contact and Support
 
 - **Support me via** [Referral Link](https://t.me/PawtatoBot?start=goFiBMa4dFx8)
 - **Support me via Donate** [Here](https://t.me/KeoAirDropFreeNe/312/27801)
