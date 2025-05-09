@@ -13,7 +13,7 @@ This comprehensive guide will help you set up and run the Pawtato Bot on Windows
 - [Using Proxies](#using-proxies)
 - [Troubleshooting](#troubleshooting)
 - [Security Recommendations](#security-recommendations)
-- [Contact and Support](#Contactandsupport)
+- [Contact and Support](#contact--support)
 
 ## 🔧 Prerequisites
 
