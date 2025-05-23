@@ -11,4 +11,4 @@ RUN pip3 install --no-warn-script-location --no-cache-dir -r requirements.txt
 
 COPY . .
 
-CMD ["python", "meomundep.py"]
+CMD ["python3", "meomundep.py"]
