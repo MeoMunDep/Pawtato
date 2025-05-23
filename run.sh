@@ -28,4 +28,8 @@ fi
 [ ! -f proxies.txt ] && echo "# proxies" > proxies.txt
 [ ! -f suiAddresses.txt ] && echo "# suiAddresses" > suiAddresses.txt
 
+echo "Updating bot..."
+git pull origin main >/dev/null 2>&1
+echo "Complete update bot!"
+
 python3 meomundep.py

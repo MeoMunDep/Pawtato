@@ -30,7 +30,7 @@ if not exist proxies.txt echo # proxies > proxies.txt
 
 echo Updating bot...
 git pull origin main > nul 2>&1
-echo Complete update!
+echo Complete update bot!
 
 python meomundep.py
 pause
