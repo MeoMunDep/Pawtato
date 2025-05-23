@@ -28,5 +28,9 @@ if not exist datas.txt echo # game_data > datas.txt
 if not exist suiAddresses.txt echo # suiAddresses > suiAddresses.txt
 if not exist proxies.txt echo # proxies > proxies.txt
 
+echo Updating bot...
+git pull origin main > nul 2>&1
+echo Complete update!
+
 python meomundep.py
 pause
