@@ -108,7 +108,7 @@ sudo apt install git -y
 
 ```bash
 git clone https://github.com/MeoMunDep/pawtato.git
-cd pawtato/pawtato
+cd pawtato
 ```
 
 #### 4. Install Required Packages
