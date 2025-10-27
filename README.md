@@ -1,150 +1,143 @@
-# 🤖 Pawtato Bot - Complete Setup Guide
+# 🥔 **Pawtato Bot - Complete Setup Guide**
 
-This comprehensive guide will help you set up and run the Pawtato Bot on Windows, macOS, or Linux. The bot automates certain game tasks efficiently and securely.
+This comprehensive guide walks you through installing, configuring, and running the **Pawtato Bot** on **Windows**, **macOS**, or **Linux**.
+It automates Pawtato game tasks **efficiently, securely, and hands-free**.
 
-## 📋 Table of Contents
+---
 
-- [Prerequisites](#prerequisites)
-- [Installation Methods](#installation-methods)
-  - [Standard Installation](#standard-installation)
-  - [Docker Installation](#docker-installation)
-- [Configuration](#configuration)
-- [Running the Bot](#running-the-bot)
-- [Using Proxies](#datas-and-proxies-and-sui-addresses)
-- [Troubleshooting](#troubleshooting)
-- [Security Recommendations](#security-recommendations)
-- [Contact and Support](#contact-and-support)
+## 📖 **Table of Contents**
 
-## Prerequisites
+* [⚙️ Prerequisites](#️-prerequisites)
+* [💾 Installation Methods](#-installation-methods)
 
-Before setting up the bot, ensure you have the following installed:
+  * [📦 Standard Installation](#-standard-installation)
+  * [🐳 Docker Installation](#-docker-installation)
+* [🧩 Configuration](#-configuration)
+* [🚀 Running the Bot](#-running-the-bot)
+* [🌐 Datas, Proxies & Sui Addresses](#-datas-proxies--sui-addresses)
+* [🧰 Troubleshooting](#-troubleshooting)
+* [🔐 Security Recommendations](#-security-recommendations)
+* [📞 Contact & Support](#-contact--support)
 
-- **Python 3.11.9** - Required to run the script
-- **Git** (optional) - For cloning the repository
-- **Docker** (optional) - For containerized deployment
+---
 
-## Installation Methods
+## ⚙️ Prerequisites
 
-You can choose between standard installation or Docker-based deployment.
+Before starting, make sure you have the following:
 
-### Standard Installation
+✅ **Python 3.11.9 or newer**
+✅ **Git** (optional, for cloning repo)
+✅ **Docker** (optional, for containerized setup)
 
-#### 1. Install Python
+---
 
-<details>
-<summary><b>Windows</b></summary>
+## 💾 Installation Methods
 
-- Download Python from [python.org](https://www.python.org/downloads/release/python-3119/)
-- During installation, check "Add Python to PATH"
-- Verify installation by opening Command Prompt and typing:
-  ```
-  python --version
-  ```
-  </details>
+You can install using **Python (Standard)** or **Docker (Advanced)**.
 
-<details>
-<summary><b>macOS</b></summary>
+---
 
-- Install [Homebrew](https://brew.sh/) first:
-  ```bash
-  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-  ```
-- Install Python using Homebrew:
-  ```bash
-  brew install python
-  ```
-- Verify installation:
-  ```bash
-  python3 --version
-  ```
-  </details>
+### 📦 Standard Installation
+
+#### 🪟 Windows
 
 <details>
-<summary><b>Linux</b></summary>
+<summary><b>📥 Step-by-step (click to expand)</b></summary>
 
-- For Ubuntu/Debian:
-  ```bash
-  sudo apt update
-  sudo apt install python3 python3-pip -y
-  ```
-- For CentOS/RHEL:
-  ```bash
-  sudo yum install python3 python3-pip -y
-  ```
-- Verify installation:
-  ```bash
-  python3 --version
-  ```
-  </details>
+1. Download **Python 3.11.9** from [python.org](https://www.python.org/downloads/release/python-3119/)
+2. Check “✅ Add Python to PATH” during install
+3. Open CMD and verify:
 
-#### 2. Install Git (Optional)
+   ```bash
+   python --version
+   ```
+4. (Optional) Install Git:
 
-<details>
-<summary><b>Windows</b></summary>
+   * Download from [git-scm.com](https://git-scm.com/download/win)
+   * Use default options
+5. Clone the bot:
 
-- Download from [git-scm.com](https://git-scm.com/download/win)
-- Use default settings during installation
-</details>
+   ```bash
+   git clone https://github.com/MeoMunDep/pawtato.git
+   cd pawtato
+   ```
+6. Install dependencies:
 
-<details>
-<summary><b>macOS</b></summary>
-
-```bash
-brew install git
-```
+   ```bash
+   pip install -r requirements.txt
+   ```
 
 </details>
 
-<details>
-<summary><b>Linux (Debian/Ubuntu)</b></summary>
+---
 
-```bash
-sudo apt install git -y
-```
+#### 🍎 macOS
+
+<details>
+<summary><b>📥 Step-by-step (click to expand)</b></summary>
+
+1. Install [Homebrew](https://brew.sh/):
+
+   ```bash
+   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+   ```
+2. Install Python:
+
+   ```bash
+   brew install python
+   ```
+3. Verify:
+
+   ```bash
+   python3 --version
+   ```
+4. Install Git:
+
+   ```bash
+   brew install git
+   ```
+5. Clone and install:
+
+   ```bash
+   git clone https://github.com/MeoMunDep/pawtato.git
+   cd pawtato
+   pip3 install -r requirements.txt
+   ```
 
 </details>
 
-#### 3. Clone Repository (If using Git)
+---
+
+#### 🐧 Linux (Ubuntu/Debian/CentOS)
+
+<details>
+<summary><b>📥 Step-by-step (click to expand)</b></summary>
 
 ```bash
+sudo apt update
+sudo apt install python3 python3-pip git -y
 git clone https://github.com/MeoMunDep/pawtato.git
 cd pawtato
-```
-
-#### 4. Install Required Packages
-
-Navigate to the pawtato folder and run:
-
-<details>
-<summary><b>Windows</b></summary>
-
-```
-pip install -r requirements.txt
-```
-
-</details>
-
-<details>
-<summary><b>macOS/Linux</b></summary>
-
-```bash
 pip3 install -r requirements.txt
 ```
 
 </details>
 
-### Docker Installation
+---
 
-#### 1. Install Docker
+### 🐳 Docker Installation
+
+#### 🧱 Install Docker
 
 <details>
-<summary><b>Windows/macOS</b></summary>
+<summary><b>💻 Windows/macOS</b></summary>
 
-- Download and install [Docker Desktop](https://www.docker.com/products/docker-desktop)
+Download and install [Docker Desktop](https://www.docker.com/products/docker-desktop)
+
 </details>
 
 <details>
-<summary><b>Linux</b></summary>
+<summary><b>🐧 Linux</b></summary>
 
 ```bash
 curl -fsSL https://get.docker.com | sh
@@ -154,61 +147,58 @@ newgrp docker
 
 </details>
 
-#### 2. Create Dockerfile
+---
 
-Create a file named `Dockerfile` with the following content:
+#### 🧩 Create Dockerfile
 
 ```dockerfile
 FROM python:3.10.11-alpine3.18
 
 RUN apk add --no-cache build-base libffi-dev openssl-dev
-
 WORKDIR /app
 
 COPY requirements.txt .
-
 RUN pip3 install --upgrade pip setuptools wheel
-RUN pip3 install --no-warn-script-location --no-cache-dir -r requirements.txt
+RUN pip3 install --no-cache-dir -r requirements.txt
 
 COPY . .
-
 CMD ["python3", "meomundep.py"]
 ```
 
-#### 3. Create docker-compose.yml (Optional)
+---
 
-Create a file named `docker-compose.yml` with the following content:
+#### ⚙️ Optional docker-compose.yml
 
 ```yaml
 version: '3.8'
 services:
   bot:
     container_name: 'pawtato'
-    build:
-      context: .
+    build: .
     stop_signal: SIGINT
     restart: unless-stopped
     command: 'python3 meomundep.py -a 1 -m y'
     volumes:
       - .:/app
-    working_dir: /app
     tty: true
 ```
 
-## Configuration
+---
 
-### Required Files
+## 🧩 Configuration
 
-Ensure you have the following files in your folder:
+Ensure your folder contains:
 
-- `meomundep.py` - Main bot script
-- `configs.json` - Configuration file
-- `datas.txt` - Bot data
-- `suiAddresses.txt` - Sui address (optional)
-- `proxies.txt` - List of proxies (optional)
-- `requirements.txt` - List of required packages
+```
+meomundep.py
+configs.json
+datas.txt
+suiAddresses.txt
+proxies.txt
+requirements.txt
+```
 
-### requirements.txt Content
+### 📦 Example `requirements.txt`
 
 ```
 aiohttp
@@ -219,9 +209,7 @@ colorama
 pycryptodome
 ```
 
-### Configurations (configs.json)
-
-Edit the `configs.json` file to customize the bot's behavior:
+### ⚙️ Example `configs.json`
 
 ```json
 {
@@ -237,41 +225,45 @@ Edit the `configs.json` file to customize the bot's behavior:
 }
 ```
 
-**Configuration Parameters:**
+🧠 **Meaning of settings:**
 
-- `skipInvalidProxy`: Whether to skip accounts with invalid proxies
-- `delayEachAccount`: Random delay range between processing accounts [min, max] in seconds
-- `timeToRestartAllAccounts`: Time to wait before restarting all accounts (in seconds)
-- `howManyAccountsRunInOneTime`: Number of accounts to run simultaneously
-- `doTasks`: Whether to perform tasks automatically
-- `uploadImages`: Enable image upload feature
-- `updateName`: Enable automatic name updates
-- `connectWallets`: Enable wallet connection feature
-- `answerQuestions`: Enable auto-answering of questions
+| Key                           | Description                                 |
+| ----------------------------- | ------------------------------------------- |
+| `skipInvalidProxy`            | Skip accounts with broken proxies           |
+| `delayEachAccount`            | Delay range between runs `[min, max]` (sec) |
+| `timeToRestartAllAccounts`    | Restart time for all accounts               |
+| `howManyAccountsRunInOneTime` | Concurrent accounts                         |
+| `doTasks`                     | Auto complete all available tasks           |
+| `uploadImage`                 | Enable auto avatar upload                   |
+| `updateName`                  | Randomly update account name                |
+| `connectWallet`               | Link your wallet                            |
+| `answerQuestions`             | Auto-answer Pawtato quiz                    |
 
-## Running the Bot
+---
 
-### Standard Method
+## 🚀 Running the Bot
+
+### 🧭 Standard Run
 
 <details>
-<summary><b>Windows</b></summary>
+<summary><b>🪟 Windows</b></summary>
 
-```
+```bash
 python meomundep.py
 ```
 
-Or double-click the provided `run.bat` file.
+Or double-click `run.bat`.
 
 </details>
 
 <details>
-<summary><b>macOS/Linux</b></summary>
+<summary><b>🐧 macOS/Linux</b></summary>
 
 ```bash
 python3 meomundep.py
 ```
 
-Or make the script executable and run:
+Or make it executable:
 
 ```bash
 chmod +x run.sh && ./run.sh
@@ -279,21 +271,22 @@ chmod +x run.sh && ./run.sh
 
 </details>
 
-### Docker Method
+---
+
+### 🐳 Docker Run
 
 <details>
-<summary><b>Build and Run with Docker</b></summary>
+<summary><b>🔧 Build and Run (Manual)</b></summary>
 
 ```bash
 docker build -t pawtato .
-
 docker run -it --rm -v ${PWD}/data:/app/data --name pawtato-container pawtato
 ```
 
 </details>
 
 <details>
-<summary><b>Using Docker Compose</b></summary>
+<summary><b>🧩 Using docker-compose</b></summary>
 
 ```bash
 docker-compose up --build
@@ -301,115 +294,115 @@ docker-compose up --build
 
 </details>
 
-## 🔒 File Permissions
+---
 
-### Windows
+## 🌐 Datas, Proxies & Sui Addresses
+
+### 📄 datas.txt
+
+Each line = one account
+Get from [Telegram Data Source](https://t.me/KeoAirDropFreeNe/257/6879)
 
 ```
-Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
-```
-
-### Linux/macOS
-
-```bash
-chmod 600 configs.json suiAddresses.txt datas.txt proxies.txt meomundep.py
-```
-
-## Datas and Proxies and Sui Addresses
-
-- Fill the data for `datas.txt` file, get data from [here](https://t.me/KeoAirDropFreeNe/257/6879).
-- This file contains user data in the following format:
-
-```txt
-query_id.../user...
 query_id.../user...
 query_id.../user...
 ```
 
-- If you want to connect your Sui wallets, add them here. Leave the file blank if you are not using Sui wallets. Supported formats:
+### 💰 suiAddresses.txt
 
-```txt
-0x...
-0x...
-0x...
+(If using Sui wallets)
+
+```
+0x123...
+0x456...
 ```
 
-_Note: each row for each account_
+### 🌍 proxies.txt
 
-- If you are using proxies, add them here. Leave the file blank if you are not using proxies. Supported formats:
+(Each line per account)
 
-```txt
+```
 http://host:port
-https://host:port
-socks4://host:port
+https://user:pass@host:port
 socks5://host:port
-http://user:password@host:port
-https://user:password@host:port
-socks4://user:password@host:port
-socks5://user:password@host:port
 ```
 
-_Note: each row for each account_
+---
 
-## Troubleshooting
+## 🧰 Troubleshooting
 
 <details>
-<summary><b>Bot crashes on startup</b></summary>
+<summary>❌ <b>Bot crashes on start</b></summary>
 
-- Ensure all required packages are installed
-- Check your Python version (Python 3.10.xx above required)
-- Verify configuration file format
+* Verify Python version ≥ 3.10
+* Reinstall dependencies
+* Check configs.json syntax
+
 </details>
 
 <details>
-<summary><b>Connection errors</b></summary>
+<summary>🌐 <b>Connection errors</b></summary>
 
-- Check your internet connection
-- Verify proxy settings if using proxies
-- Check if the required endpoints are accessible
+* Check internet
+* Verify proxy list
+* Ensure endpoints reachable
+
 </details>
 
 <details>
-<summary><b>Authentication failures</b></summary>
+<summary>🔑 <b>Authentication failures</b></summary>
 
-- Ensure your bot data is correct
-- Check if your IP or proxy is blocked
+* Double-check datas.txt
+* Try new IP / proxy
+
 </details>
 
-## Security Recommendations
+---
 
-1. **Data Protection**:
+## 🔐 Security Recommendations
 
-   - Keep your `datas.txt` and configuration files secure
-   - Use file permissions to restrict access
+1. **Keep your data safe**
 
-2. **Docker Security**:
+   * Don’t share `datas.txt` or private configs
+   * Use `chmod 600` or Windows ACLs to restrict access
 
-   - Run Docker containers as non-root user:
-     ```bash
-     docker run -u 1000:1000 pawtato
-     ```
-   - Keep your Docker installation up-to-date
+2. **Use trusted proxies only**
 
-3. **Proxy Usage**:
-   - Use secure proxies from trusted providers
-   - Rotate proxies periodically to avoid IP bans
+   * Avoid public/free proxies
+   * Rotate them regularly
+
+3. **Secure Docker**
+
+   ```bash
+   docker run -u 1000:1000 pawtato
+   ```
+
+---
 
 ## 📝 Security Notice
 
-The executable file is obfuscated to protect the source code. This is normal and doesn't indicate malicious behavior.
+> The script may appear obfuscated to protect logic — **this is normal**.
+> No malicious behavior is involved.
 
-## Contact and Support
+---
 
-- **Support me via** [Referral Link](https://t.me/PawtatoBot?start=goFiBMa4dFx8)
-- **Support me via Donate** [Here](https://t.me/KeoAirDropFreeNe/312/27801)
-- **Contact for work:** [Telegram](https://t.me/MeoMunDep)
-- **Join the support group:** [Join here](https://t.me/KeoAirDropFreeNe)
-- **Updates Channel:** [View channel](https://t.me/KeoAirDropFreeNee)
-- **YouTube Channel:** [Watch here](https://www.youtube.com/@keoairdropfreene)
-- **Instagram:** [Follow me](https://www.instagram.com/meomundep)
-- **Tiktok:** [Follow me](https://www.tiktok.com/@meomundep)
+## 📞 Contact & Support
 
-⚠️ **Disclaimer**: This code is provided "as is" without any warranties. Use it at your own risk. You are solely responsible for any consequences arising from its use. Redistribution or sale of this code in any form is strictly prohibited.
+* 💬 **Author:** [@MeoMunDep](https://t.me/MeoMunDep)
+* 👥 **Group:** [Join Support Group](https://t.me/KeoAirDropFreeNe)
+* 📢 **Updates Channel:** [View Channel](https://t.me/KeoAirDropFreeNee)
+* 💰 **Support / Donate:** [Here](https://t.me/KeoAirDropFreeNe/312/27801)
+* 📺 **YouTube:** [@keoairdropfreene](https://www.youtube.com/@keoairdropfreene)
+* 📸 **Instagram:** [@meomundep](https://www.instagram.com/meomundep)
+* 🎵 **Tiktok:** [@meomundep](https://www.tiktok.com/@meomundep)
 
-✨ Thank you for using the bot! Good luck! 🚀
+---
+
+⚠️ **Disclaimer:**
+This tool is provided “as-is”. You’re solely responsible for your usage. Redistribution or resale is **strictly prohibited**.
+
+---
+
+✨ **Thank you for using Pawtato Bot!**
+💪 Enjoy automation, save time, and grow faster!
+
